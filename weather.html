@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App in JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linking BoxIcon for Icon -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- css stylesheet -->
+  <link href="style1.css" rel="stylesheet">
+  <link href="st.css" rel="stylesheet">
+</head>
+
+<body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          
+            <div class="logo-img me-3">
+              <img src="icons/weather1.jpeg" alt="" class="img-fluid" /><br>
+            </div>
+            <div
+              class="logo-body d-flex justify-content-center align-items-start flex-column"
+            >
+
+            </div>
+            
+          </div>
+          <div class="right" style="text-align: center;">
+            <h1 class="m-0" style="text-align: center;";>Weather App</h1>
+            <a href="home.html">Home</a>
+            
+            <a href="game.html">Predict</a>
+            <a href="todo.html">TODos</a>
+            
+          </div>
+          </a>
+        </div>
+      </nav>
+      <!-- header -->
+      <header>
+        <div class="container"  >
+          <form action="" class="location-search" style="border: 20px;">
+            <input
+              type="text"
+              name=""
+              id="search"
+              placeholder="Enter your location ..."
+            />
+            <!--<input type="button" value="Find" />-->
+            <p
+              id="errorMessage"
+              class="text-warning p-3 d-none position-absolute"
+            >
+              Please enter a real location ..
+            </p>
+          </form>
+          <div class="weather-body">
+            <div class="row" style="display: flex;align-items: center;">
+              <div class="col-md-4 p-0">
+                <div id="todayWeather"></div>
+              </div>
+              <div class="col-md-4 p-0">
+                <div id="tomorrowWeather"></div>
+              </div>
+              <div class="col-md-4 p-0">
+                <div id="dayAfterTomorrowWeather"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- footer -->
+      <footer>
+      </footer>
+
+  
+  <script src="weather.js"></script>
+
+</body>
+
+</html>
